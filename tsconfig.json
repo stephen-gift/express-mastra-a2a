@@ -1,0 +1,23 @@
+
+{
+ "compilerOptions": {
+   "rootDir": "./src",
+   "outDir": "./dist",
+   // "moduleResolution": "node",
+   "target": "es2022",
+   "module": "NodeNext",
+   "types": [],
+   "esModuleInterop": true, // Often helpful with NodeNext
+   "resolveJsonModule": true, // Good practice for importing JSON if needed
+   // For nodejs:
+   // "lib": ["esnext"],
+   // "types": ["node"],
+   // and npm install -D @types/node
+
+   // Other Outputs
+   "sourceMap": true,
+   "declaration": true,
+   "declarationMap": true
+ },
+ "include": ["src/**/*.ts"]
+}
