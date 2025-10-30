@@ -29,7 +29,8 @@ app.use((request: Request, response: Response, next: NextFunction) => {
   const logData: Record<string, any> = {
     timestamp: new Date().toISOString(),
     method: request.method,
-    path: request.path
+    path: request.path,
+    baseUrl: request.baseUrl
   };
 
   if (Object.keys(request.params || {}).length) {
